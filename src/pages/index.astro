@@ -1,0 +1,128 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Arhan Sibal";
+const description =
+  "Arhan Sibal is a strategy and operations professional with six years across ZS, BCG, Bain, Amazon, and Angel One, an MBA from Michigan Ross, and hands-on depth in analytics and AI.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="hero">
+    <h1>I turn messy business problems into systems that scale.</h1>
+    <p class="lede">
+      I have spent six years doing that across ZS, BCG, Bain, Amazon, and
+      Angel One, in strategy, operations, and product roles. MBA from Michigan
+      Ross, computer science from IIIT Delhi. The technical side never left.
+      I still write my own SQL and Python, and I build AI tools when the off
+      the shelf ones fall short.
+    </p>
+    <p class="hero-links">
+      <a class="primary-link" href="/projects">See selected work</a>
+      <a href="/writing">Read my writing</a>
+    </p>
+  </section>
+
+  <section class="strand" aria-labelledby="strategy-heading">
+    <h2 id="strategy-heading">Strategy and operations</h2>
+    <p>
+      Most of my work starts with a vague question from leadership and ends
+      with something a team can actually run every week. Market entry, cost
+      models, operating metrics, the unglamorous middle of strategy where the
+      slides have to survive contact with reality.
+    </p>
+  </section>
+
+  <section class="strand" aria-labelledby="analytics-heading">
+    <h2 id="analytics-heading">Analytics I can trace</h2>
+    <p>
+      I do the analysis myself rather than waiting in a queue for a data
+      team. That keeps the loop between question and answer short, and it
+      means every number in my recommendations is one I can defend line by
+      line.
+    </p>
+  </section>
+
+  <section class="strand" aria-labelledby="ai-heading">
+    <h2 id="ai-heading">AI I have actually built</h2>
+    <p>
+      I build with AI rather than just writing about it. The most recent
+      example is
+      <a
+        href="https://chromewebstore.google.com/detail/cgbimjanhgfjcopnpklcikkpcbgmjgoo"
+        >J.A.N.E.</a
+      >, a Chrome extension that helps job seekers cut through postings, pick
+      the right resume, and draft outreach that sounds like them. More of this
+      lives on the <a href="/projects">projects page</a>.
+    </p>
+  </section>
+
+  <section class="close">
+    <p>
+      If something here is relevant to what you are working on, the fastest
+      way to reach me is
+      <a href="mailto:arhansibal10@gmail.com">arhansibal10@gmail.com</a>. The
+      formal version of all this is on my <a href="/resume">resume</a>.
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    margin: 0 0 1rem;
+    max-width: 22ch;
+  }
+
+  .lede {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    max-width: var(--measure);
+    margin: 0 0 1.5rem;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    align-items: center;
+    margin: 0 0 1rem;
+  }
+
+  .primary-link {
+    background: var(--accent);
+    color: var(--paper);
+    text-decoration: none;
+    padding: 0.55rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .primary-link:hover {
+    background: #174734;
+  }
+
+  .strand {
+    margin-top: 2.75rem;
+    max-width: var(--measure);
+  }
+
+  .strand h2 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .strand p {
+    margin: 0;
+  }
+
+  .close {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    max-width: var(--measure);
+  }
+
+  .close p {
+    margin: 0;
+  }
+</style>
