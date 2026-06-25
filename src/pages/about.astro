@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "About · Arhan Sibal";
+const description =
+  "Arhan Sibal grew up in Delhi, spent his career in Gurgaon, and now lives in San Francisco. A computer science background that turned into strategy and operations work.";
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="about">
+    <h1>About</h1>
+
+    <p>
+      I grew up in Delhi and did not really leave until I was thirty. School
+      there, computer science at IIIT Delhi there, and then my whole early
+      career a short drive away in Gurgaon. The first time I lived anywhere
+      else was Ann Arbor, for the MBA at Michigan Ross in 2023. I live in San
+      Francisco now, and I am enjoying it more than I expected to.
+    </p>
+
+    <p>
+      For the first stretch of my career I was the data and tools person. I
+      wrote the SQL, built the models, and put together the things that made
+      the analysis run. I was good at it and I liked it, but I was always one
+      step removed from where the decisions got made.
+    </p>
+
+    <p>
+      That changed in 2021. I got pulled onto client sites as the technical
+      and strategy thought partner for front-end case teams, sitting in the
+      room rather than supporting it from outside. My first on-site project
+      was at a pharmaceutical manufacturing plant on the east coast of India.
+      The problems shifted almost every day, the people around me were some of
+      the sharpest I had worked with, and the work asked you to stay
+      resourceful when the ground kept moving. I found I wanted to be in that
+      room for good, not next to it. That is the year I decided to do an MBA,
+      and I gave it one more year of that kind of work before applying.
+    </p>
+
+    <p>
+      Since then I have worked across strategy, operations, and product, and
+      the technical side has stayed with me the whole way. I still write my
+      own SQL and Python, and when an off the shelf tool does not do what I
+      need, I build one. A lot of that building happens under MuggleTech,
+      which I started with a few batchmates and named after exactly the Harry
+      Potter thing you are thinking of.
+    </p>
+
+    <p>
+      Outside work, a fair amount of my time goes to my kitchen garden and to
+      getting butter chicken right, which is harder than it sounds. On
+      weekends I hike the Bluffs to Batteries trail, which is still the best
+      argument I know for living in San Francisco. I am also slowly teaching
+      myself guitar, and rewatching Harry Potter more often than a grown adult
+      probably should.
+    </p>
+
+    <p class="about-close">
+      If you want the formal version, it is on my
+      <a href="/resume">resume</a>, or you can reach me at
+      <a href="mailto:arhansibal10@gmail.com">arhansibal10@gmail.com</a>.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .about {
+    max-width: var(--measure);
+  }
+
+  .about h1 {
+    font-size: clamp(1.7rem, 4.5vw, 2.2rem);
+    margin: 0 0 1.5rem;
+  }
+
+  .about p {
+    margin: 0 0 1.25rem;
+  }
+
+  .about-close {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+</style>
